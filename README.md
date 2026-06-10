@@ -1,4 +1,4 @@
-# Assignment 4: [Student Performance Analyzer]
+# Assignment 6: [Student Performance Analyzer]
 
 This branch contains the solutions for the assignment 6.
 

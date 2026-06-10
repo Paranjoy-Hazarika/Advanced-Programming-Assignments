@@ -1,4 +1,4 @@
-# Assignment 1: [Space-Complexity]
+# Assignment 2: [Space-Complexity]
 
 This branch contains the solutions for the assignment 2.
 

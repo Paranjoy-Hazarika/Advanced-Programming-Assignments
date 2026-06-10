@@ -9,7 +9,7 @@ This repository contains all the submissions for the semester. Per the submissio
 | Assignment | Description | Language / Framework | Branch Link |
 | :--- | :--- | :--- | :--- |
 | **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Portfolio & Dashboard UI | React.js (Vite) | [View Branch](../../tree/assignment-2) |
+| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
 | **Assignment 3** | Mobile Coffee Shop App | React Native (Expo) | [View Branch](../../tree/assignment-3) |
 
 ---
@@ -19,7 +19,7 @@ To check out a specific assignment locally, clone the repo and switch to the res
 
 ```bash
 # Clone the repository
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+git clone [https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments/](https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments/)
 cd YOUR_REPO_NAME
 
 # Switch to the assignment you want to test

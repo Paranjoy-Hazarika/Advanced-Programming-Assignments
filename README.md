@@ -19,8 +19,8 @@ To check out a specific assignment locally, clone the repo and switch to the res
 
 ```bash
 # Clone the repository
-git clone [https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments/](https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments/)
-cd YOUR_REPO_NAME
+git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
+cd CSB24017_Assignments
 
 # Switch to the assignment you want to test
 git checkout assignment-3

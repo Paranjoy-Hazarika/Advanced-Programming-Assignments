@@ -10,7 +10,10 @@ This repository contains all the submissions for the semester. Per the submissio
 | :--- | :--- | :--- | :--- |
 | **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
 | **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Mobile Coffee Shop App | React Native (Expo) | [View Branch](../../tree/assignment-3) |
+| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
+| **Assignment 4** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
+| **Assignment 5** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
+| **Assignment 6** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
 
 ---
 

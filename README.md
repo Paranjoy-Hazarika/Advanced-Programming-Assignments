@@ -1,29 +1,40 @@
-# CS Engineering - Assignment Repository
+# Assignment 7: [Activity Log]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 7.
 
----
+## Problem Statement
+Develop an activity log analyzer in python:
 
-## Navigation Guide
+You are given a list of activity records:
+{
+    "user": str,              //roll numbers of students
+    "action": str,          //Online activities of students such as - apps, websites visited etc.
+    "duration": float   //screen time for each activity
+}
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
+You must:
 
----
+1. Store data efficiently using python built-in containers.
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+2. Implement the following:
+def total_time_per_user(logs: list[dict]) -> dict[str, float]
+def most_active_users(logs: list[dict], k: int) -> list[str]
+def unique_actions(logs: list[dict]) -> set[str]
+
+3. 
+a. Use dict, set, and list
+b. Use comprehensions where appropriate
+c. Use sorted() with key
+d. Avoid explicit loops where possible
+e. Use typing annotations
+f. Use defaultdict optionally
+f. Use reduce() to compute total activity time.
+
+4. Perform complexity analysis:
+a. Time complexity for computing top K users
+b. Space complexity of storing intermediate results
+
+* **File:** `activityLog.py`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+python activityLog.py

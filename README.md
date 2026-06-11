@@ -15,7 +15,7 @@ This repository contains all the submissions for the semester. Per the submissio
 | **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
 | **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
 | **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
-| **Assignment 8** | Activity Log | Python | [View Branch](../../tree/assignment-8) |
+| **Assignment 8** | Course Enrollment Dashboard | React | [View Branch](../../tree/assignment-8) |
 | **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
 | **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
 | **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |

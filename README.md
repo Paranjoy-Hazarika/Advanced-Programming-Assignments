@@ -1,34 +1,26 @@
-# CS Engineering - Assignment Repository
+# Assignment 13: [String Buffer]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 13.
 
----
+## Problem Statement
+In C, managing strings is a common source of buffer overflows and memory leaks. Implement a Dynamic String Buffer that automatically grows as needed.
 
-## Navigation Guide
+Requirements:
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
-| **Assignment 8** | Activity Log | Python | [View Branch](../../tree/assignment-8) |
-| **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
-| **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
-| **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |
+1. Create a StringBuffer struct containing a char *data, a size_t length, and a size_t capacity. 
 
----
+2. Write a function sb_init(size_t initial_capacity) that allocates the struct and the data buffer on the heap. Handle NULL returns from malloc.
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+3. Write sb_append(StringBuffer *sb, const char *str).
+
+4. If the new string exceeds current capacity, use realloc to double the capacity. Ensure you handle realloc safely (don't overwrite the original pointer if it returns NULL).
+
+Write sb_free(StringBuffer *sb) which works as a destructor that frees both the internal data and the struct itself to prevent memory leaks.
+
+Demonstrate the buffer growing at least twice and then free all memory.
+
+* **File:** `StringBuffer.c`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+gcc StringBuffer.c -o StringBuffer
+./StringBuffer

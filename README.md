@@ -22,11 +22,11 @@ This repository contains all the submissions for the semester. Per the submissio
 | **Assignment 12** | Payment System | Python | [View Branch](../../tree/assignment-12) |
 | **Assignment 13** | String Buffer | C | [View Branch](../../tree/assignment-13) |
 | **Assignment 14** | Reference | Python | [View Branch](../../tree/assignment-14) |
-| **Assignment 15** | Multithreading | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 16** | Multithreading | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 17** | Multithreading | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 18** | Multithreading | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 19** | Multithreading | C | [View Branch](../../tree/assignment-15) |
+| **Assignment 15** | Multithreading 1 | C | [View Branch](../../tree/assignment-15) |
+| **Assignment 16** | Multithreading 2 | C | [View Branch](../../tree/assignment-16) |
+| **Assignment 17** | Pytest Expection | Python | [View Branch](../../tree/assignment-17) |
+| **Assignment 18** | Multithreading | C | [View Branch](../../tree/assignment-18) |
+| **Assignment 19** | Multithreading | C | [View Branch](../../tree/assignment-19) |
 
 ---
 

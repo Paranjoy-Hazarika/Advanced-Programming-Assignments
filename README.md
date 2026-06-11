@@ -1,36 +1,27 @@
-# CS Engineering - Assignment Repository
+# Assignment 14: [Reference]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 14.
 
----
+## Problem Statement
+Create a scenario where objects are "dead" but still have a reference count higher than zero, then force the Garbage Collector to clean them up. Do in python only. 
 
-## Navigation Guide
+Implementation Steps:
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
-| **Assignment 8** | Activity Log | Python | [View Branch](../../tree/assignment-8) |
-| **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
-| **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
-| **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |
-| **Assignment 12** | Payment System | Python | [View Branch](../../tree/assignment-12) |
-| **Assignment 13** | String Buffer | C | [View Branch](../../tree/assignment-13) |
+Create a Node class with a name and a link attribute.
 
----
+Create a Cycle: Instantiate Node A and Node B.
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+Set A.link = B and B.link = A.
+
+Check References: Use sys.getrefcount() to show that both objects have multiple references.
+
+The "Deletion": Use del A and del B.
+
+The Investigation: Use the gc module to show that these objects still exist in memory because of the cycle, even though you can no longer access them from your code.
+
+The Cleanup: Call gc.collect() and print the number of "unreachable" objects collected.
+
+* **File:** `Reference.py`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+python Reference.py

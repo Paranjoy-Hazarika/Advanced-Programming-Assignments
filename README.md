@@ -1,30 +1,43 @@
-# CS Engineering - Assignment Repository
+# Assignment 7: [Activity Log]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 8.
 
----
+## Problem Statement
+Develop a course enrollment dashboard in reactjs:
 
-## Navigation Guide
+You are building a React component that displays enrolled students.
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
+Each student:
+{
+  id: number,
+  name: string,
+  enrolledCourses: Set<string>,
+  gpa: number
+}
 
----
+You must: 
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+1. Maintain students in state.
+
+2. Implement the following features:
+a. Add new student
+b. Remove student by ID
+c. Display students sorted by GPA (descending)
+d. Display all unique courses across students
+e. Filter students enrolled in a specific course
+
+3. Use the followings
+a. Use useState
+b. Use Map internally for id to student mapping
+c. Use Set for course uniqueness
+d. Use map, filter, and reduce
+e. Do not mutate state directly
+f. Use spread operator for updates
+g. Convert Set to array before rendering
+
+4. Compute time complexity of filtering students by course
+
+* **File:** `activityLog.py`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+python activityLog.py

@@ -1,36 +1,15 @@
-# CS Engineering - Assignment Repository
+# Assignment 15: [Multithreading]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 15.
 
----
+## Problem Statement
+Write a multithreaded C program using POSIX threads (pthread) where multiple threads increment a shared global counter variable many times. First implement the program without any synchronization and observe the incorrect output caused by a race condition. Then modify the program using a mutex (pthread_mutex_t) to protect the critical section and produce the correct final counter value. Your program must demonstrate thread creation using pthread_create(), synchronization using pthread_mutex_lock() and pthread_mutex_unlock(), and thread completion using pthread_join(). Also explain briefly why the race condition occurs and how the mutex solves the problem.
 
-## Navigation Guide
-
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
-| **Assignment 8** | Activity Log | Python | [View Branch](../../tree/assignment-8) |
-| **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
-| **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
-| **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |
-| **Assignment 12** | Payment System | Python | [View Branch](../../tree/assignment-12) |
-| **Assignment 13** | String Buffer | C | [View Branch](../../tree/assignment-13) |
-
----
-
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+* **File:** `Muted_Fixed.c, Race_Condition.c`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
+gcc -pthread Muted_Fixed.c -o Muted_Fixed
+gcc -pthread Race_Condition.c -o Race_Condition
 
-# Switch to the assignment you want to test
-git checkout assignment-3
+./Muted_Fixed
+./Race_Condition

@@ -8,5 +8,5 @@ Write a c program for three different operations as stated in question 1 to anal
 * **File:** `space-complexity.c`
 
 ```bash
-g++ space-complexity.c -o space-complexity
+gcc space-complexity.c -o space-complexity
 ./space-complexity

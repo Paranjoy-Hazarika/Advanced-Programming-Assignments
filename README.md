@@ -25,7 +25,7 @@ This repository contains all the submissions for the semester. Per the submissio
 | **Assignment 15** | Multithreading 1 | C | [View Branch](../../tree/assignment-15) |
 | **Assignment 16** | Multithreading 2 | C | [View Branch](../../tree/assignment-16) |
 | **Assignment 17** | Pytest Expection | Python | [View Branch](../../tree/assignment-17) |
-| **Assignment 18** | Multithreading | C | [View Branch](../../tree/assignment-18) |
+| **Assignment 18** | Pytest Expection | Python | [View Branch](../../tree/assignment-18) |
 | **Assignment 19** | Multithreading | C | [View Branch](../../tree/assignment-19) |
 
 ---

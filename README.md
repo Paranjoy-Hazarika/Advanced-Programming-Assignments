@@ -1,30 +1,30 @@
-# CS Engineering - Assignment Repository
+# Assignment 9: [Bank Management]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 9.
 
----
+## Problem Statement
+Design a banking system in Java with:
 
-## Navigation Guide
+A base class Account containing private fields: accountNumber, ownerName, balance
+Provide getters/setters and at least two constructors (use constructor chaining)
+Implement deposit() and withdraw() with proper validation
+Add a display() method
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
+Extend it with:
 
----
+SavingsAccount (add interestRate, override display() and show interest)
+CurrentAccount (add overdraftLimit, restrict withdrawals accordingly)
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+Your implementation should clearly show:
+
+Proper encapsulation (no direct field access)
+Use of constructor overloading and chaining (this(...))
+Inheritance and method overriding (use @Override and super)
+Polymorphism by storing objects in an Account reference list and calling display()
+Basic validation/debugging (e.g., assert or exception for invalid operations)
+
+* **File:** `BankSystem.java`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+javac BankSystem.java
+java BankSystem

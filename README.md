@@ -1,33 +1,27 @@
-# CS Engineering - Assignment Repository
+# Assignment 11: [Library System]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 11.
 
----
+## Problem Statement
+Design a library system in Java or Python with:
 
-## Navigation Guide
+A base/abstract class LibraryItem (common fields like title, year)
+An abstract/common method displayInfo()
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
-| **Assignment 8** | Activity Log | Python | [View Branch](../../tree/assignment-8) |
-| **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
-| **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
+Create subclasses such as:
 
----
+Book (add author)
+DVD (add duration/genre)
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+Your implementation should clearly show:
+
+Use of abstraction (common structure in base class)
+Method overriding in subclasses
+Polymorphism using a collection of LibraryItem objects
+One additional feature:
+constructor overloading / default arguments OR class/static counter
+
+* **File:** `LibrarySystem.py`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+python LibrarySystem.py

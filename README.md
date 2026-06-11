@@ -19,6 +19,8 @@ This repository contains all the submissions for the semester. Per the submissio
 | **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
 | **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
 | **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |
+| **Assignment 12** | Payment System | Python | [View Branch](../../tree/assignment-12) |
+| **Assignment 13** | String Buffer | C | [View Branch](../../tree/assignment-13) |
 
 ---
 

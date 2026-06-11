@@ -1,34 +1,43 @@
-# CS Engineering - Assignment Repository
+# Assignment 12: [Payment System]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 12.
 
----
+## Problem Statement
+Design a system in java/python for processing customer orders in an e-commerce platform. 
 
-## Navigation Guide
+An order system should support:
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
-| **Assignment 8** | Activity Log | Python | [View Branch](../../tree/assignment-8) |
-| **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
-| **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
-| **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |
+Multiple payment methods (Credit Card, UPI, Wallet, etc.)
+Multiple notification channels (Email, SMS, Push)
+Different order types (Regular Order, Discounted Order, Priority Order)
+Ability to store order data using different storage mechanisms (Database, File, etc.)
+Design Constraints (Must Apply SOLID Principles)
 
----
+Your design must satisfy the SOLID principles as follows:
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+1. Single Responsibility Principle (SRP): Each class should have a single responsibility
+(e.g., order logic, payment processing, notification, storage should be separate)
+
+2. Open/Closed Principle (OCP): You should be able to add:
+New payment methods
+New notification types
+Without modifying existing classes
+
+3. Liskov Substitution Principle (LSP): All subclasses (e.g., payment types, order types) should work correctly when used through their base type, No subclass should break expected behavior
+
+4. Interface Segregation Principle (ISP): Avoid large interfaces, Design small, role-specific interfaces
+(e.g., don’t force all classes to implement unused methods)
+
+5. Dependency Inversion Principle (DIP): High-level classes (e.g., OrderService) must depend on abstractions, not concrete implementations, Use dependency injection.
+
+Your system should:
+
+Create an order,
+Process payment using a selected payment method,
+Send notification after successful order,
+Save order details using a storage mechanism;
+
+* **File:** `PaymentMethod.py`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+python PaymentMethod.py

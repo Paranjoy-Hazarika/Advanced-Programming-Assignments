@@ -1,42 +1,25 @@
-# CS Engineering - Assignment Repository
+# Assignment 17: [Pytest Exception]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 17.
 
----
+## Problem Statement
+Build a user onboarding validation module for a platform. Your objective is to create a core validation class that processes incoming application data—specifically a user's email address and age—and enforces strict business constraints before allowing a registration to complete.
 
-## Navigation Guide
+The system must ensure that the email string is neither null nor empty, and that it conforms to a standard email format matching the regular expression patterns outlined in the slides (containing a valid identifier, an @ symbol, and a domain name). Additionally, the system must enforce a strict age restriction where applicants must be at least 18 years old to create an account.
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
-| **Assignment 8** | Activity Log | Python | [View Branch](../../tree/assignment-8) |
-| **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
-| **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
-| **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |
-| **Assignment 12** | Payment System | Python | [View Branch](../../tree/assignment-12) |
-| **Assignment 13** | String Buffer | C | [View Branch](../../tree/assignment-13) |
-| **Assignment 14** | Reference | Python | [View Branch](../../tree/assignment-14) |
-| **Assignment 15** | Multithreading | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 16** | Multithreading | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 17** | Multithreading | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 18** | Multithreading | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 19** | Multithreading | C | [View Branch](../../tree/assignment-15) |
+Implementation Rules
+If choosing Java: You must implement a checked exception named InvalidEmailException and an unchecked (RuntimeException) exception named UnderageException. Create a RegistrationService class containing a method public boolean registerUser(String email, int age) throws InvalidEmailException. You must include an internal assert statement to guarantee that the inputs are not processed if the system context is invalid. Finally, write a JUnit 5 test suite named RegistrationServiceTest that uses a @BeforeEach setup method, validates successful registrations, and uses assertThrows to verify that both custom exceptions are thrown under incorrect conditions.
 
----
+If choosing Python: You must implement a custom exception named InvalidEmailError and another named UnderageError, both inheriting from the appropriate built-in exception classes. Create a RegistrationService class containing a method def register_user(self, email: str, age: int) -> bool. Use an internal assert statement to verify basic state invariants. Finally, write a pytest suite using a shared @pytest.fixture for configuration, validating successful workflows, and utilizing pytest.raises to assert that your custom errors are raised appropriately during invalid inputs.
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+You must have the followings:
+Custom Exception Design: Correctly establishing checked vs. unchecked hierarchies (Java) or appropriate base class inheritance (Python) with descriptive, dynamic error messages.
+
+Core Service Validation: Implementing the regex parsing, age boundary checks, invariant assertions, and proper exception triggering.
+
+Unit Testing Suite: Writing comprehensive test cases using the correct framework assertions, proper test lifecycle setup (fixtures/before-each), and targeted exception testing.
+
+* **File:** `RegistrationServices.py` `TestRegistrationServices.py`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+pytest TestRegistrationServices.py -v

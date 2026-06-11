@@ -8,5 +8,5 @@ Write a C program to analyze time complexities in constant time, linear time and
 * **File:** `time_complexity.c`
 
 ```bash
-g++ time_complexity.c -o time_complexity
+gcc time_complexity.c -o time_complexity
 ./time_complexity

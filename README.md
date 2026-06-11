@@ -1,4 +1,4 @@
-# Assignment 15: [Multithreading]
+# Assignment 15: [Multithreading 1]
 
 This branch contains the solutions for the assignment 15.
 

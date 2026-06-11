@@ -21,6 +21,12 @@ This repository contains all the submissions for the semester. Per the submissio
 | **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |
 | **Assignment 12** | Payment System | Python | [View Branch](../../tree/assignment-12) |
 | **Assignment 13** | String Buffer | C | [View Branch](../../tree/assignment-13) |
+| **Assignment 14** | Reference | Python | [View Branch](../../tree/assignment-14) |
+| **Assignment 15** | Multithreading | C | [View Branch](../../tree/assignment-15) |
+| **Assignment 16** | Multithreading | C | [View Branch](../../tree/assignment-15) |
+| **Assignment 17** | Multithreading | C | [View Branch](../../tree/assignment-15) |
+| **Assignment 18** | Multithreading | C | [View Branch](../../tree/assignment-15) |
+| **Assignment 19** | Multithreading | C | [View Branch](../../tree/assignment-15) |
 
 ---
 

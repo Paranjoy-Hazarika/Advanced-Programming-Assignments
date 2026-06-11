@@ -1,42 +1,27 @@
-# CS Engineering - Assignment Repository
+# Assignment 18: [Pytest Exception]
 
-This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
+This branch contains the solutions for the assignment 18.
 
----
+## Problem Statement
+Generally, handling external files is a common source of runtime errors. Files might be missing, or they might contain corrupted data. For this assignment, you will create a simple data utility class that reads an integer value from a text file, performs a calculation, and ensures all system resources are properly closed afterward—even if something goes wrong.
 
-## Navigation Guide
+Your program needs to read a numeric score from a file, multiply it by 10, and return the result. If the file does not exist, the system must catch that error and notify the user with a specific message. If the file exists but contains letters instead of a number, the system must handle that invalid data format gracefully. Finally, you must write basic automated tests to verify that your calculation works and that bad inputs are handled correctly.
 
-| Assignment | Description | Language / Framework | Branch Link |
-| :--- | :--- | :--- | :--- |
-| **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) |
-| **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) |
-| **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) |
-| **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) |
-| **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) |
-| **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) |
-| **Assignment 8** | Activity Log | Python | [View Branch](../../tree/assignment-8) |
-| **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) |
-| **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) |
-| **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) |
-| **Assignment 12** | Payment System | Python | [View Branch](../../tree/assignment-12) |
-| **Assignment 13** | String Buffer | C | [View Branch](../../tree/assignment-13) |
-| **Assignment 14** | Reference | Python | [View Branch](../../tree/assignment-14) |
-| **Assignment 15** | Multithreading 1 | C | [View Branch](../../tree/assignment-15) |
-| **Assignment 16** | Multithreading 2 | C | [View Branch](../../tree/assignment-16) |
-| **Assignment 17** | Pytest Expection | Python | [View Branch](../../tree/assignment-17) |
-| **Assignment 18** | Multithreading | C | [View Branch](../../tree/assignment-18) |
-| **Assignment 19** | Multithreading | C | [View Branch](../../tree/assignment-19) |
+Implementation Rules:
 
----
+If choosing Java: Create a class named ScoreProcessor. Write a method public int processScoreFile(String filePath) that uses a try-catch-finally block (or a try-with-resources block) to open and read a file. Catch FileNotFoundException and NumberFormatException specifically, logging or printing a clear error message for each. Use the finally block to print a "File cleanup completed" message to the console. Write a JUnit 5 test suite with at least two test cases: one verifying a successful calculation with a valid file path, and one using assertThrows to check how the system reacts to a missing file.
 
-## How to Review and Run
-To check out a specific assignment locally, clone the repo and switch to the respective branch:
+If choosing Python: Create a class named ScoreProcessor. Write a method def process_score_file(self, file_path: str) -> int that uses a try-except-else-finally block to open and read a file. Catch FileNotFoundError and ValueError specifically, printing a helpful error message for each. Use the else block to print "Data processed successfully", and use the finally block to print "File cleanup completed". Write a pytest suite with at least two test functions: one testing a successful calculation with a valid file, and one using with pytest.raises to verify that a missing file is handled correctly.
+
+You must have the followings:
+
+Exception Handling & Structure: Correctly implementing the multi-catch structure (FileNotFound and Invalid Format/Value errors) and ensuring the cleanup block executes under all conditions.
+
+Core Logic & Input Validation: Successfully reading the file content, parsing the text into a usable integer, and executing the required multiplication calculation.
+
+Unit Testing: Setting up a working test suite that uses correct framework assertions to validate both the happy path (successful calculation) and the error path (missing file).
+
+* **File:** `ScoreProcessor.py` `TestScoreProcessor.py`
 
 ```bash
-# Clone the repository
-git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git CSB24017_Assignments
-cd CSB24017_Assignments
-
-# Switch to the assignment you want to test
-git checkout assignment-3
+pytest TestScoreProcessor.py -v

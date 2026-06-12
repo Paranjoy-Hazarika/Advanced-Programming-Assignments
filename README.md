@@ -37,7 +37,7 @@ g. Convert Set to array before rendering
 
 4. Compute time complexity of filtering students by course
 
-**🔗 Live Demo**: https://csb24017-todo-app.netlify.app/
+**🔗 Live Demo**: https://csb24017-course-dashboard.netlify.app/
 
 ## Time Complexity: Filtering by Course
 

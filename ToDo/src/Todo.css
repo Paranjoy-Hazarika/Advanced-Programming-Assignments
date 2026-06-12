@@ -1,0 +1,77 @@
+:root {
+  --heading-font: 2.5rem;
+  --primary-font: 1.2rem;
+}
+
+* {
+  /* font-family: monospace; */
+  font-family: Bahnschrift;
+  font-size: var(--primary-font);
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+
+  max-width: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  width: 800px;
+}
+
+h1 {
+  font-size: var(--heading-font);
+  margin: 10px 0;
+}
+
+.todo-form,
+.task {
+   width: 100%;
+}
+
+.todo-form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.todo-form input[type="text"] {
+  width: 100%;
+  padding: 5px 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.todo-form input[type="text"]::placeholder {
+  font-style: italic;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.task p {
+  width: 100%;
+}

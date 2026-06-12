@@ -7,7 +7,7 @@ This repository contains all the submissions for the semester. Per the submissio
 ## Navigation Guide
 
 | Assignment | Description | Language / Framework | Branch Link | Live Demo |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | **Assignment 1** | Time Complexity | C | [View Branch](../../tree/assignment-1) | - |
 | **Assignment 2** | Space Complexity | C | [View Branch](../../tree/assignment-2) | - |
 | **Assignment 3** | Book Scanner | Java | [View Branch](../../tree/assignment-3) | - |

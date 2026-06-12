@@ -52,7 +52,7 @@ Here is a full screen recording of the application running live on an Android de
 <!-- <video width="300" height="400" controls>
     <source src="./Recordings/counter-app.mp4" type="video/mp4">
 </video> -->
-![Video](https://github.com/user-attachments/assets/5632a8d1-2ef1-4a28-bdfa-c33ccd86b561)
+https://github.com/user-attachments/assets/5632a8d1-2ef1-4a28-bdfa-c33ccd86b561
 
 > 💡 **Note:** If the video does not play automatically in your browser, you can view the raw file directly in the repository [here](./Recordings/counter-app.mp4).
 

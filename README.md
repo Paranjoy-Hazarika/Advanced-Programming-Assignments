@@ -1,6 +1,12 @@
-# Assignment 5: []
+# Assignment 5: [To-Do List]
 
-Live Demo: https://csb24017-todo-app.netlify.app/
+This branch contains the solutions for the assignment 5.
+
+## Problem Statement
+Create a Python program using a list and dictionary to store products with name and stock quantity.
+Display all products whose stock is less than 10.
+
+**Live Demo**: https://csb24017-todo-app.netlify.app/
 
 ## 1. Features — bullet list of what it does:
 
@@ -16,8 +22,9 @@ CSS (no libraries)
 
 ## 3. How to run locally
 ```bash
-git clone <repo-url>
-git checkout <branch-name>
+git clone https://github.com/Paranjoy-Hazarika/Advanced-Programming-Assignments.git
+git checkout assignment-5
+
 npm install
 npm run dev
 ```

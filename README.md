@@ -1,16 +1,27 @@
-# React + Vite
+# Assignment 5: []
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: https://csb24017-todo-app.netlify.app/
 
-Currently, two official plugins are available:
+## 1. Features — bullet list of what it does:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add and delete tasks
+Mark tasks as complete with a checkbox
+Long task names truncate with ... (hover to see full text)
+Tasks persist on page refresh via localStorage
 
-## React Compiler
+## 2. Tech used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React (Vite)
+CSS (no libraries)
 
-## Expanding the ESLint configuration
+## 3. How to run locally
+```bash
+git clone <repo-url>
+git checkout <branch-name>
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 4. Brief explanation of key decisions — this is what makes it stand out for grading. One short paragraph, e.g.:
+
+Tasks are stored as objects { text, done } rather than plain strings to support the toggle feature. localStorage is synced via useEffect so state persists across sessions.

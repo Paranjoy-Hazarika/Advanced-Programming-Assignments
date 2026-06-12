@@ -1,5 +1,9 @@
 # CS Engineering - Assignment Repository
 
+**Student Name:** Paranjoy Hazarika  
+**Roll Number:** CSB24017  
+**Semester:** 4th SEM
+
 This repository contains all the submissions for the semester. Per the submission guidelines, each assignment is hosted on its own dedicated Git branch. 
 
 ---

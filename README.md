@@ -49,10 +49,7 @@ Those who are having android mobile must run it in the mobile in development mod
 Here is a full screen recording of the application running live on an Android device via Expo Go, demonstrating the counter logic, zero-boundary validation, and the dark mode theme toggle:
 
 **Counter App Demo**
-<!-- <video width="300" height="400" controls>
-    <source src="./Recordings/counter-app.mp4" type="video/mp4">
-</video> -->
-https://github.com/user-attachments/assets/5632a8d1-2ef1-4a28-bdfa-c33ccd86b561
+https://github.com/user-attachments/assets/8fea05a6-8087-431c-abcd-69f60e9472b2
 
 > 💡 **Note:** If the video does not play automatically in your browser, you can view the raw file directly in the repository [here](./Recordings/counter-app.mp4).
 

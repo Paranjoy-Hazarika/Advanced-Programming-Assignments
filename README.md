@@ -26,7 +26,7 @@ This repository contains all the submissions for the semester. Per the submissio
 | **Assignment 16** | Multithreading 2 | C | [View Branch](../../tree/assignment-16) | - |
 | **Assignment 17** | Pytest Expection | Python | [View Branch](../../tree/assignment-17) | - |
 | **Assignment 18** | Pytest Expection | Python | [View Branch](../../tree/assignment-18) | - |
-| **Assignment 19** | Counter App | React Native | [View Branch](../../tree/assignment-19) | - |
+| **Assignment 19** | Counter App | React Native | [View Branch](../../tree/assignment-19) |[🎥 Video Demo](../../tree/assignment-19#video-demonstration) |
 
 ---
 

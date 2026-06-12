@@ -50,10 +50,10 @@ Here is a full screen recording of the application running live on an Android de
 
 **Counter App Demo**
 <video width="300" height="400" controls>
-    <source src="/Recordings/counter app.mp4" type="video/mp4">
+    <source src="./Recordings/counter-app.mp4" type="video/mp4">
 </video>
 
-> 💡 **Note:** If the video does not play automatically in your browser, you can view the raw file directly in the repository [here](./Recordings/counter%20app.mp4).
+> 💡 **Note:** If the video does not play automatically in your browser, you can view the raw file directly in the repository [here](./Recordings/counter-app.mp4).
 
 ## Features
 - **Increment Functionality:** Increases the counter value with instantaneous UI re-render.

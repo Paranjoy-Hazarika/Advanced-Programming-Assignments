@@ -14,8 +14,8 @@ This repository contains all the submissions for the semester. Per the submissio
 | **Assignment 4** | Stock Comparison | Python | [View Branch](../../tree/assignment-4) | - |
 | **Assignment 5** | To-Do List | React | [View Branch](../../tree/assignment-5) | [🌐 Live Demo](https://csb24017-todo-app.netlify.app/) |
 | **Assignment 6** | Student Performance Analyzer | Java | [View Branch](../../tree/assignment-6) | - |
-| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) | [🌐 Live Demo](https://csb24017-course-dashboard.netlify.app/) |
-| **Assignment 8** | Course Enrollment Dashboard | React | [View Branch](../../tree/assignment-8) | - |
+| **Assignment 7** | Activity Log | Python | [View Branch](../../tree/assignment-7) | - |
+| **Assignment 8** | Course Enrollment Dashboard | React | [View Branch](../../tree/assignment-8) | [🌐 Live Demo](https://csb24017-course-dashboard.netlify.app/) |
 | **Assignment 9** | Bank System | Java | [View Branch](../../tree/assignment-9) | - |
 | **Assignment 10** | Student System | Python | [View Branch](../../tree/assignment-10) | - |
 | **Assignment 11** | Library System | Python | [View Branch](../../tree/assignment-11) | - |

@@ -72,6 +72,60 @@ h1 {
   align-items: center;
 }
 
+.id-num {
+  min-width: 20px;
+}
+
 .task p {
+  display: flex;
+  align-items: center;
+}
+
+.task p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   width: 100%;
+}
+
+.task p input {
+  min-width: 10px;
+  max-width: 20px;
+}
+
+.task.done p {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.inp-task {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
+
+/* Icons */
+#trash-can,
+#plus-icon {
+  width: 30px;
+}
+
+.task button,
+.todo-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task button img {
+  filter: invert(1);
+}
+
+.todo-form button img {
+  filter: invert(1);
+}
+
+.extra-text {
+  margin-top: 5px;
 }
